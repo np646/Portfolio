@@ -1,18 +1,14 @@
 "use client";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
 import { IntlProvider } from "react-intl";
 import { LocaleProvider, useLocale } from "./context/LocaleContext";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const quicksand = Quicksand({
+  variable: "--font-quicksand-sans",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 function IntlWrapper({ children }: { children: ReactNode }) {
@@ -31,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${quicksand.variable} antialiased`}>
         <LocaleProvider>
           <IntlWrapper>{children}</IntlWrapper>
         </LocaleProvider>

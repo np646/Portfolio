@@ -1,10 +1,10 @@
-'use client'
-import AboutMe from "./pages/AboutMe";
+"use client";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <div>
-      <AboutMe />
+      <Navbar />
     </div>
   );
 }
