@@ -2,7 +2,7 @@ import LanguageButton from "./LanguageButton";
 import { FormattedMessage } from "react-intl";
 export default function Navbar() {
   return (
-    <nav className="bg-indigo-950 fixed w-full z-20 top-0 start-0">
+    <nav className="bg-opacity-0 fixed w-full z-20 top-0 start-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-lg font-semibold whitespace-nowrap text-zinc-200 hover:text-pink-400">Nataly Salazar</span>
