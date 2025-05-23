@@ -11,7 +11,7 @@ export default function AboutMe() {
     <section id="about" className="pt-15">
       <div className="relative" style={{ height: "calc(100vh - 3.75rem)" }}>
         <div className="absolute inset-0 z-0">
-          <Squares speed={0.5} squareSize={40} direction="diagonal" borderColor="#222222" hoverFillColor="#CB64B6" />
+          <Squares speed={0.5} squareSize={40} direction="diagonal" borderColor="#262626" hoverFillColor="#CB64B6" />
         </div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center pointer-events-none">
           <div className="flex justify-center text-[48px] leading-none">
