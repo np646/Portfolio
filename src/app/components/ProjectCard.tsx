@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { FormattedMessage } from "react-intl";
 import { projects } from "../components/ProjectList";
+import CloseIcon from "@mui/icons-material/Close";
 
 interface ProjectCardProps {
   value: number;
@@ -26,7 +27,7 @@ export default function ProjectCard({ value }: ProjectCardProps) {
             <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-zinc-900 opacity-25"></div>
           </div>
           <a href={projects.find((p) => p.id === value)?.url} target="_blank" rel="noopener noreferrer">
-            <div className="text-xs absolute top-0 right-0 px-4 py-2 text-white mt-3 mr-3  hover:text-pink-400 transition duration-500 ease-in-out">
+            <div className="text-xs absolute top-0 right-0 px-4 py-2 mt-3 mr-3  hover:text-pink-400 transition duration-500 ease-in-out">
               <GitHubIcon />
             </div>
           </a>
@@ -36,7 +37,10 @@ export default function ProjectCard({ value }: ProjectCardProps) {
             <FormattedMessage id={`project${value}.title`} />
           </span>
 
-          <p className="text-gray-400 text-sm">Project description</p>
+          <p className="text-gray-400 text-sm">
+            {" "}
+            <FormattedMessage id={`project${value}.description`} />
+          </p>
         </div>
         <div className="px-6 py-3 flex flex-row items-center justify-start border-t-1 border-neutral-800">
           {projects
@@ -57,9 +61,9 @@ export default function ProjectCard({ value }: ProjectCardProps) {
               <div className="flex justify-end p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
                 <button
                   onClick={() => setIsModalOpen(false)}
-                  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
                 >
-                  ✕
+                  <CloseIcon />
                 </button>
               </div>
 

@@ -2,6 +2,16 @@
   "about_me.title": "About me",
   "about_me.description": "I'm an IT engineer specializing in fullstack software development and data analysis. I'm always looking forward to learning new technologies.",
   "projects.title": "Projects",
-  "contact.title": "Contact",
-  "project1.title": "Project 1"
+  "project1.title": "Document Management Web Application",
+  "project1.description": "Thesis project created for the academic follow-up of the students of the School of Informatics and Artificial Intelligence of PUCE-I.",
+  "project2.title": "Donation Management Web Application",
+  "project2.description": "Web application for Imbabura’s Food Bank that allows users to manage donations and track their impact.",
+  "project3.title": "INVENTEC",
+  "project3.description": "Web application for the management of products in inventory and creation of orders to suppliers via e-mail.",
+  "project4.title": "Cost Accumulation System",
+  "project4.description": "Management of production orders of textile items, raw material orders according to supplier, and Kardex control for the School of Business and International Trade of PUCE-I.",
+  "project5.title": "3DUCAR",
+  "project5.description": "Mobile application utilizing augmented reality for language learning.",
+  "project6.title": "Terminal News",
+  "project6.description": "Python script using News API to read news articles from different sources in the terminal."
 }

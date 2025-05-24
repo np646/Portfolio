@@ -2,6 +2,16 @@
   "about_me.title": "Sobre mí",
   "about_me.description": "Soy una ingeniera de TI especializada en desarrollo de software fullstack y análisis de datos. Siempre estoy buscando aprender nuevas tecnologías.",
   "projects.title": "Proyectos",
-  "contact.title": "Contacto",
-  "project1.title": "Proyecto 1"
+  "project1.title": "Aplicación Web de Gestión Documental",
+  "project1.description": "Proyecto de tesis creado para el seguimiento académico de los estudiantes de la Escuela de Informática e Inteligencia Artificial de PUCE-I.",
+  "project2.title": "Aplicación Web de Gestión de Donaciones",
+  "project2.description": "Aplicación web para el Banco de Alimentos de Imbabura que permite a los usuarios gestionar donaciones y hacer un seguimiento de su impacto.",
+  "project3.title": "INVENTEC",
+  "project3.description": "Aplicación web para la gestión de productos en inventario y creación de pedidos a proveedores vía e-mail.",
+  "project4.title": "Sistema de Acumulación de Costos",
+  "project4.description": "Gestión de órdenes de producción de artículos textiles, pedidos de materia prima según proveedor y control de Kardex para la Escuela de Negocios y Comercio Internacional de PUCE-I.",
+  "project5.title": "3DUCAR",
+  "project5.description": "Aplicación móvil que utiliza realidad aumentada para el aprendizaje de idiomas.",
+  "project6.title": "Terminal News",
+  "project6.description": "Script de Python que utiliza News API para leer artículos de noticias de diferentes fuentes en la terminal."
 }
