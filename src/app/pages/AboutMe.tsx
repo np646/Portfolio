@@ -14,11 +14,8 @@ export default function AboutMe() {
           <Squares speed={0.5} squareSize={40} direction="diagonal" borderColor="#262626" hoverFillColor="#CB64B6" />
         </div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center pointer-events-none">
-          <div className="flex justify-center text-[48px] leading-none">
-            <TerminalIcon
-              className="text-pink-400 relative"
-              sx={{ fontSize: 48, top: "1px" }}
-            />
+          <div className="flex justify-center items-center leading-none text-[30px] md:text-[48px] space-x-2">
+            <TerminalIcon  fontSize="inherit" className="text-pink-400 w-[30px] h-[30px] md:w-[48px] md:h-[48px] relative top-[1px]" />
             <Typewriter
               options={{
                 strings: ["Hello, I'm Nataly!", "Hola, soy Nataly!"],
@@ -28,6 +25,7 @@ export default function AboutMe() {
               }}
             />
           </div>
+
           <div className="flex flex-col items-center justify-center w-150 max-w-full my-5">
             <FormattedMessage id="about_me.description" />
           </div>
