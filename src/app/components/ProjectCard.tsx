@@ -3,7 +3,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { FormattedMessage } from "react-intl";
 import { projects } from "../components/ProjectList";
-import CloseIcon from "@mui/icons-material/Close";
 
 interface ProjectCardProps {
   value: number;
@@ -20,7 +19,7 @@ export default function ProjectCard({ value }: ProjectCardProps) {
             <Image
               className="w-full"
               src={projects.find((p) => p.id === value)?.image || ""}
-              alt="Sunset in the mountains"
+              alt="Personal project image"
               width={1024}
               height={683}
             />
@@ -32,13 +31,11 @@ export default function ProjectCard({ value }: ProjectCardProps) {
             </div>
           </a>
         </div>
-        <div className="px-6 py-4 mb-auto">
+        <div className="px-6 py-4 mb-auto h-45">
           <span className="font-medium text-lg inline-block mb-2">
             <FormattedMessage id={`project${value}.title`} />
           </span>
-
           <p className="text-gray-400 text-sm">
-            {" "}
             <FormattedMessage id={`project${value}.description`} />
           </p>
         </div>
@@ -54,28 +51,26 @@ export default function ProjectCard({ value }: ProjectCardProps) {
       </div>
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="relative p-4 w-full max-w-2xl max-h-full">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+          onClick={() => setIsModalOpen(false)} // closes modal when clicking outside of it
+        >
+          <div
+            className="relative p-4 w-full max-w-2xl max-h-full"
+            onClick={(e) => e.stopPropagation()} // prevent modal closing on image click
+          >
             <div className="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
-              {/* Header */}
-              <div className="flex justify-end p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
-                <button
-                  onClick={() => setIsModalOpen(false)}
-                  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
-                >
-                  <CloseIcon />
-                </button>
-              </div>
-
-              {/* Content */}
-              <div className="p-4 md:p-5 space-y-4">
-                <Image
-                  className="w-full"
-                  src={projects.find((p) => p.id === value)?.image || ""}
-                  alt="Sunset in the mountains"
-                  width={1024}
-                  height={683}
-                />
+              {/* Image */}
+              <div className="relative">
+                <div>
+                  <Image
+                    className="w-full"
+                    src={projects.find((p) => p.id === value)?.image || ""}
+                    alt="Personal project image"
+                    width={1024}
+                    height={683}
+                  />
+                </div>
               </div>
             </div>
           </div>

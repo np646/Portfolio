@@ -10,12 +10,12 @@ export default function Navbar() {
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <ul className="flex flex-row font-medium space-x-5 rtl:space-x-reverse mt-0 ">
             <li className="hidden sm:block">
-              <a href="#" className="block hover:text-pink-400">
+              <a href="#about" className="block hover:text-pink-400">
                 <FormattedMessage id="about_me.title" />
               </a>
             </li>
             <li className="hidden sm:block">
-              <a href="#" className="block hover:text-pink-400">
+              <a href="#projects" className="block hover:text-pink-400">
                 <FormattedMessage id="projects.title" />
               </a>
             </li>
