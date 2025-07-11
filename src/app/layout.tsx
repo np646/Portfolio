@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${quicksand.variable} antialiased`}>
+        <title>Nataly Salazar</title>
         <LocaleProvider>
           <IntlWrapper>{children}</IntlWrapper>
         </LocaleProvider>
