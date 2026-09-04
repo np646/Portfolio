@@ -36,7 +36,7 @@ export default function AboutMe() {
             <a href="https://linkedin.com/in/natalysalazar95/" target="_blank" className="hover:text-pink-400">
               <LinkedInIcon fontSize="large" />
             </a>
-            <a href="https://github.com/np646" target="_blank" className="hover:text-pink-400">
+            <a href="https://github.com/natalysalazar" target="_blank" className="hover:text-pink-400">
               <GitHubIcon fontSize="large" />
             </a>
           </div>
